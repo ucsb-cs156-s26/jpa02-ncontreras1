@@ -32,6 +32,14 @@ public class TeamTest {
         assertEquals(team.equals("hello"), false);
     }
 
+    @Test
+    public void hashCode_returns_correctly(){
+        Team t1 = new Team("test-team");
+        team.addMember("Nathan C");
+        t1.addMember("Nathan C");
+        assertEquals(team.hashCode(), -413762);
+    }
+
    
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
     // 100% mutation coverage (all mutants timed out or killed)

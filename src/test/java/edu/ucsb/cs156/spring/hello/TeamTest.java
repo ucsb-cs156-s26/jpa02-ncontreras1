@@ -30,6 +30,10 @@ public class TeamTest {
         assertEquals(team.equals(t1), false);
         assertEquals(team.equals(team), true);
         assertEquals(team.equals("hello"), false);
+        t1.setName("test-team");
+        assertEquals(team.equals(t1), true);
+        t1.addMember("Nathan C");
+        assertEquals(team.equals(t1), false);
     }
 
     @Test

@@ -40,11 +40,11 @@ public class Developer {
     
     public static Team getTeam() {
         Team team = new Team("s26-14");
-        team.addMember("Abhi");
+        team.addMember("Abhijeet");
         team.addMember("Alessandro");
         team.addMember("Benny");
         team.addMember("Brian");
-        team.addMember("Nathan C");
+        team.addMember("Nathan");
         team.addMember("Vishva");
         return team;
     }

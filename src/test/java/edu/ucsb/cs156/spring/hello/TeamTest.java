@@ -19,6 +19,19 @@ public class TeamTest {
        assert(team.getName().equals("test-team"));
     }
 
+    @Test
+    public void toString_returns_correct_string(){
+        assertEquals("Team(name=test-team, members=[])", team.toString());
+    }
+
+    @Test
+    public void equals_always_returns_correctly(){
+        Team t1 = new Team("different-team");
+        assertEquals(team.equals(t1), false);
+        assertEquals(team.equals(team), true);
+        assertEquals(team.equals("hello"), false);
+    }
+
    
     // TODO: Add additional tests as needed to get to 100% jacoco line coverage, and
     // 100% mutation coverage (all mutants timed out or killed)
